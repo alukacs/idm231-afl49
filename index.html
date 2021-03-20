@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDM231 Zodiac Project</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <audio id="sndZeus" src="sounds/sndZeus.mp3" preload="auto"></audio>
+  <audio id="sndPoseidon" src="sounds/sndPoseidon.mp3" preload="auto"></audio>
+  <audio id="sndAthena" src="sounds/sndAthena.mp3" preload="auto"></audio>
+  <audio id="sndArtemis" src="sounds/sndArtemis.mp3" preload="auto"></audio>
+  <audio id="sndHephaestus" src="sounds/sndHephaestus.mp3" preload="auto"></audio>
+  <audio id="sndHermes" src="sounds/sndHermes.mp3" preload="auto"></audio>
+  <audio id="sndHera" src="sounds/sndHera.mp3" preload="auto"></audio>
+  <audio id="sndDemeter" src="sounds/sndDemeter.mp3" preload="auto"></audio>
+  <audio id="sndApollo" src="sounds/sndApollo.mp3" preload="auto"></audio>
+  <audio id="sndAres" src="sounds/sndAres.mp3" preload="auto"></audio>
+  <audio id="sndAphrodite" src="sounds/sndAphrodite.mp3" preload="auto"></audio>
+  <audio id="sndDionysus" src="sounds/sndDionysus.mp3" preload="auto"></audio>
+  <div class="grid-container">
+    <h1 class="title">
+      What Ancient Greek Olympian Are You?
+    </h1>
+    <div class="userInputs">
+      <input class="inputField" type="text" id="name" placeholder="Name">
+      <input class="inputField" type="date" id="date">
+      <button class="inputField" id="submit">Submit</button>
+    </div>
+    <div id="olympianDates">Mount Olympus</div>
+    <img id="blank" src="./images/olympus.png" alt="blank">
+    <div id="description">Mt. Olympus is the highest mountain in Greece, and in Greek mythology, was the home of the gods.</div>
+    <button class="button buttonLeft" id=zeus></button>
+    <button class="button buttonLeft" id="poseidon"></button>
+    <button class="button buttonLeft" id="athena"></button>
+    <button class="button buttonLeft" id="artemis"></button>
+    <button class="button buttonLeft" id="hephaestus"></button>
+    <button class="button buttonLeft" id="hermes"></button>
+    <button class="button buttonRight" id="hera"></button>
+    <button class="button buttonRight" id="demeter"></button>
+    <button class="button buttonRight" id="apollo"></button>
+    <button class="button buttonRight" id="ares"></button>
+    <button class="button buttonRight" id="aphrodite"></button>
+    <button class="button buttonRight" id="dionysus"></button>
+    <button class="button buttonHelp" id="buttonHelp"></button>
+    <button class="button buttonMute" id="buttonMute"></button>
+  </div>
+  <div id="helpModal" class="helpModal" hidden>
+    <div class="helpModalcontent">
+      <h1 class="helpTitle">
+        Help
+      </h1>
+      <p class="helpInfo">
+        Enter a name and birthday and click sumbit to find out what Ancient Greek olympian you are! Alternatively, click on one of the twelve greek gods on either side of the screen to learn more about them. To stop all sounds, click the button in the bottom right corner.
+      </p>
+      <button id="closeHelp" class="toggleHelp">CLOSE</button>
+      <p class="helpSources">
+        All images are provided by freeicons.com and VSigmaV, all descriptions from wikipedia.org, and all sounds are provided by youtube.com.
+      </p>
+    </div>
+    <div class="blanket"></div>
+  </div>
+  <script src="./scripts.js"></script>
+</body>
+</html>
